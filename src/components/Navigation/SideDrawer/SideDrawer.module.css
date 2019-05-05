@@ -1,0 +1,47 @@
+.sideDrawer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 85;
+    background-color: #242424;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+}
+
+.link {   
+    display: block; 
+    padding: 10px;
+
+    border: 2px solid #bfa361;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+    font-family: inherit;
+    background-color: #bfa361;
+}
+
+.nav {
+    font-size: 15px;
+}
+
+.contacts {
+    font-size: 13px;
+}
+
+.open {
+    transform: translateY(56px);
+}
+
+.close {
+    transform: translateY(-100%);
+}
+
+@media (min-width: 768px) {
+    .sideDrawer {
+        display: none;
+    }
+}

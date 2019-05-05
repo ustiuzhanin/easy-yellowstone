@@ -1,0 +1,45 @@
+.link {
+    padding: 15px 20px;
+    border-top: 1px solid #000;
+}
+
+.link:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.link a {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.link .active {
+    color: #f7c90b;
+}
+
+@media (min-width: 768px) {
+    .link a {
+        margin: 0;
+        padding: 10px 3px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    .link a:hover,
+    .link a:focus-within {
+        color: #f7c90b;
+    }
+
+    .link .active {
+        color: #f7c90b;
+        border-bottom: 1px solid #f7c90b;
+    }
+}
+
+@media (min-width: 1024px) {
+    .link a {
+        font-size: 18px;
+    }
+}
