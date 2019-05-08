@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+
+import Catcher from '../../components/Catcher/Catcher';
+import Features from '../../components/Features/Features';
 
 function Home() {
   return (
-    <div>
-      <h1> aaaa</h1>
-    </div>
+    <main>
+      <Catcher />
+      <Features />
+    </main>
   )
 }
 

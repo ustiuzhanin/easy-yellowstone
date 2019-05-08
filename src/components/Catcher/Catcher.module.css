@@ -1,0 +1,45 @@
+.catcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 56px;
+  height: 100vh;
+
+  background-image: url('../../assets/tevin-trinh-435986-unsplash1.jpg');
+  background-position: 50%;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 300px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  margin-top: 0;
+
+  color: #f7c90b;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.text {
+  margin-bottom: 40px;
+
+  color: #fff;
+}
+
+.btn {
+  padding: 10px 20px;
+
+  font-size: 16px;
+  color: #f7c90b;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #f7c90b;
+  border-radius: 25px;
+}
