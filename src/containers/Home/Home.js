@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Catcher from '../../components/Catcher/Catcher';
+import Tours from '../../components/Tours/Tours';
 import Features from '../../components/Features/Features';
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
     <main>
       <Catcher />
       <Features />
+      <Tours />
     </main>
   )
 }

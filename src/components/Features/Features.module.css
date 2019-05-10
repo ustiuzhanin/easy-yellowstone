@@ -2,8 +2,15 @@
   max-width: 450px;
   margin: 0 auto;
   padding: 20px;
+  /* background-image: url('https://images.unsplash.com/photo-1490260400179-d656f04de422?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80');
+  background-size: cover; */
 }
 
-.wrapper {
+.title {
+  margin-top: 0;
+}
 
+.text {
+  line-height: 30px;
+  color: #707070;
 }

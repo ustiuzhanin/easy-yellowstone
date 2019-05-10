@@ -1,0 +1,24 @@
+.tour {
+  margin-bottom: 50px;
+
+  box-shadow: 0px 0px 10px 3px #b5b5b3;
+}
+
+.wrapper {
+  padding: 5px 20px;
+}
+
+.img {
+  display: block;
+}
+
+.title {
+  border-bottom: 1px solid #bae2c7;
+  padding-bottom: 20px;
+  color: #56926a;
+}
+
+.text {
+  font-size: 14px;
+  color: #707070;
+}

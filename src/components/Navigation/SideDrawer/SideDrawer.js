@@ -15,13 +15,13 @@ const sideDrawer = ( props ) => {
         <React.Fragment>
             {/* <Backdrop show={props.open} clicked={props.closed}/> */}
             <div className={attachedstyles.join(' ')}>
-                <div>
-                    {/* <Logo width={100} height={100} /> */}
-                </div>
+                {/* <div>
+                    <Logo width={100} height={100} />
+                </div> */}
                 <nav className={styles.nav}>
                     <NavigationItems clicked={props.closed} />
                 </nav>
-                <div className={styles.contacts}>
+                {/* <div className={styles.contacts}>
                     <Link onClick={props.closed} className={styles.link} to={{
                         pathname: '/contacts/callback',
                         state: {
@@ -31,7 +31,7 @@ const sideDrawer = ( props ) => {
                             btnTitle: 'Заказать Звонок'
                           }
                     }}>Заказать Звонок</Link>
-                </div>
+                </div> */}
             </div>
         </React.Fragment>
     );
