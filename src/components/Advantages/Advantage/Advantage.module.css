@@ -1,0 +1,16 @@
+.advantage {
+  padding: 30px 20px;
+
+  background-color: #2E8B57;
+  text-align: center;
+  color: #fff;
+}
+
+.advantage:nth-child(2n) {
+  background-color: #3CB371;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+}
