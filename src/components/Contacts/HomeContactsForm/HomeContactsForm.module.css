@@ -1,0 +1,15 @@
+.contacts {
+  margin: 0 auto;
+  padding: 20px;
+
+  background-color: #474c5a;
+}
+
+.title {
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 450px;
+  margin: 0 auto;
+}
