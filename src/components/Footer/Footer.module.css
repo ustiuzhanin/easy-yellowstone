@@ -1,0 +1,37 @@
+.footer {
+  padding: 20px;
+  background-color: #242424;
+  color: #fff;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.highlightText {
+  color: #f7c90b;
+}
+
+.footerNav {
+  background-color: #fff;
+}
+
+
+.link {
+  display: block;
+  margin-bottom: 5px;
+
+  text-decoration: none;
+  font-size: 13px;
+  color: #f7c90b;
+}
+
+.copyrightWrapper {
+  margin-top: 30px;
+}
+
+.copyright {
+  text-align: right;
+  font-size: 12px;
+  color: #9c9c9c;
+}

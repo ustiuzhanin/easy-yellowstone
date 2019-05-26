@@ -16,7 +16,8 @@
   color: #56926a;
 }
 
-.input {
+.form input, 
+.form textarea {
   display: block;
   width: 100%;
   padding: 10px 5px;
@@ -27,6 +28,10 @@
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #bae2c7;
+}
+
+textarea.input {
+  resize: vertical;
 }
 
 .btn {

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import styles from './ContactForm.module.css';
+import DayPickerInput from 'react-day-picker/DayPickerInput';
+import 'react-day-picker/lib/style.css';
 
 export class ContactForm extends Component {
 
@@ -35,7 +37,7 @@ export class ContactForm extends Component {
   render() {
     return (
       <form className={styles.form}>
-        <p>
+        <p className={styles.inputWrapper}>
         <label className={styles.label}>Full Name:</label>
         <input
             className={styles.input}
@@ -45,7 +47,7 @@ export class ContactForm extends Component {
             value={this.state.name}
             onChange={this.inputChangeHandler} />
         </p>
-        <p>
+        <p className={styles.inputWrapper}>
         <label className={styles.label}>Email Address</label>
         <input
             className={styles.input}
@@ -54,7 +56,7 @@ export class ContactForm extends Component {
             value={this.state.email}
             onChange={this.inputChangeHandler} />
         </p>
-        <p>
+        <p className={styles.inputWrapper}>
         <label className={styles.label}>Phone Number</label>
         <input
             className={styles.input}
@@ -65,7 +67,7 @@ export class ContactForm extends Component {
             value={this.state.phone}
             onChange={this.phoneChangeHandler} />
         </p>
-        <p>
+        <p className={styles.inputWrapper}>
         <label className={styles.label}>Number Of People</label>
         <input
             className={styles.input}
@@ -74,16 +76,15 @@ export class ContactForm extends Component {
             value={this.state.amount}
             onChange={this.inputChangeHandler} />
         </p>
-        <p>
+        <p className={styles.inputWrapper}>
         <label className={styles.label}>Date</label>
-        <input
-            className={styles.input}
-            name="date"
-            type="number"
-            value={this.state.date}
-            onChange={this.inputChangeHandler} />
+          <DayPickerInput 
+            inputProps={{readOnly: 'true'}} 
+            className={styles.input} 
+            onDayChange={date => this.setState({date: date})} 
+            dayPickerProps={{ disabledDays: {before: new Date()} }} />
         </p>
-        <p>
+        <p className={styles.inputWrapper}>
         <label className={styles.label}>Additional Message</label>
         <textarea
             className={styles.input}

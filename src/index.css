@@ -32,3 +32,9 @@ img {
 h1, h2, h3, h4 {
   color: #2f3c4a;
 }
+
+/* daypicker custom styles */
+
+div.DayPickerInput {
+  display: block;
+}
