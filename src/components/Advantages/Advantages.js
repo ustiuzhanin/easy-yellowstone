@@ -35,7 +35,7 @@ export class Advantages extends Component {
   render() {
     return (
       <section className={styles.advantages}>
-        <h2>Lorem ipsum dolor sit</h2>
+        <h2>Why people choose usdfsdfsdf</h2>
         <div className={styles.wrapper}>
           {this.state.advantages.map(item => {
             return <Advantage key={item.id} url={item.url} text={item.text} />

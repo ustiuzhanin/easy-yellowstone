@@ -1,0 +1,44 @@
+.contacts {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 56px;
+
+  line-height: 30px;
+  color: #585858;
+}
+
+.imgWrapper {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.item {
+  position: relative;
+}
+
+.item:before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 10px;
+
+  width: 7px;
+  height: 7px;
+  border-radius: 50%; 
+  background-color: #f7c90b;
+}
+
+.link {
+  display: block;
+
+  color: #707070;
+}
+
+.contacts form {
+  background-color: #fdfdfd;
+}

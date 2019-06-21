@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import styles from './Gallery.module.css';
 import MediaQuery from 'react-responsive';
 import Slider from 'react-slick';
-import FullscreenGallery from './FullscreenGallery/FullscreenGallery'
+import FullscreenGallery from './FullscreenGallery/FullscreenGallery';
+import CustomArrow from './CustomArrow/CustomArrow';
 
 export class Carousel extends Component {
   state = {
@@ -59,9 +60,11 @@ export class Carousel extends Component {
       arrows: true,
       autoplay: true,
       autoplaySpeed: 4000,
+      nextArrow: <CustomArrow next />,
+      prevArrow: <CustomArrow prev />,
       responsive: [
         {
-          breakpoint: 1200,
+          breakpoint: 767,
           settings: {
             arrows: false
           }
@@ -72,13 +75,15 @@ export class Carousel extends Component {
 
     return (
       <section className={styles.gallery}>
-        <h2 className={styles.title}>Gallery</h2>
-        <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, error.</p>
+        <div className={styles.textWrapper}>
+          <h2 className={styles.title}>Gallery</h2>
+          <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, error.</p>
+        </div>
         <div className={styles.wrapper}>
 
           {this.state.fullscreen ? <FullscreenGallery id={this.state.currentSlide} close={this.closeBtnHandler} /> : null}
 
-          <MediaQuery minDeviceWidth={768}>
+          <MediaQuery minDeviceWidth={1024}>
             <Slider {...settings}>
 
               {this.state.slides.map(slide => (
@@ -89,7 +94,7 @@ export class Carousel extends Component {
 
             </Slider>
           </MediaQuery>
-          <MediaQuery maxDeviceWidth={767}>
+          <MediaQuery maxDeviceWidth={1023}>
             <Slider {...settings}>
 
               {this.state.slides.map(slide => (

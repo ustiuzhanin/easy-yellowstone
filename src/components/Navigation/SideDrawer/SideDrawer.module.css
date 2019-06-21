@@ -4,7 +4,7 @@
     left: 0;
     top: 0;
     z-index: 85;
-    background-color: #242424;
+    background-color: rgba(36, 36, 36, 0.95);
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
 }

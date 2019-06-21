@@ -19,6 +19,14 @@
 }
 
 @media (min-width: 768px) {
+    .link {
+        border: none;
+    }
+    
+    .link:last-child {
+        border: none;
+    }
+
     .link a {
         margin: 0;
         padding: 10px 3px;

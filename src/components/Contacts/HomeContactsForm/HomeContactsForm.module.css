@@ -14,3 +14,12 @@
   max-width: 450px;
   margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .contacts {
+    max-width: 520px;
+    margin-bottom: 40px;
+  
+    border-radius: 25px;
+  }
+}

@@ -4,6 +4,14 @@
   box-shadow: 0px 0px 10px 3px #b5b5b3;
 }
 
+.tour:last-child {
+  margin-bottom: 0;
+}
+
+.tour a {
+  text-decoration: none;
+}
+
 .wrapper {
   padding: 5px 20px;
 }
@@ -21,4 +29,27 @@
 .text {
   font-size: 14px;
   color: #707070;
+}
+
+@media (min-width: 768px) {
+  .tour {
+    display: flex;
+  }
+
+  .tour:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .img {
+    max-width: 50%;
+    max-height: 300px;
+  }
 }

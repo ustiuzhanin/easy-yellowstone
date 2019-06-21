@@ -1,4 +1,4 @@
-.about {
+.faq {
   max-width: 450px;
   margin: 0 auto;
   padding: 20px;
@@ -11,8 +11,10 @@
 }
 
 .contentWrapper {
-  padding: 20px 0;
-
   line-height: 30px;
   color: #585858;
+}
+
+b {
+  color: #000;
 }

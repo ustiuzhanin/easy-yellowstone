@@ -38,8 +38,32 @@
   font-size: 16px;
   color: #f7c90b;
   text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
   font-weight: bold;
   background-color: transparent;
   border: 1px solid #f7c90b;
   border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+  .catcher {
+    padding-top: 0;
+  }
+
+  .wrapper {
+    width: 400px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
 }

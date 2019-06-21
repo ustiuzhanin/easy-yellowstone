@@ -1,18 +1,12 @@
-.about {
+.tours {
   max-width: 450px;
   margin: 0 auto;
   padding: 20px;
   padding-top: 56px;
+  color: #585858;
 }
 
 .imgWrapper {
   margin-left: -20px;
   margin-right: -20px;
-}
-
-.contentWrapper {
-  padding: 20px 0;
-
-  line-height: 30px;
-  color: #585858;
 }

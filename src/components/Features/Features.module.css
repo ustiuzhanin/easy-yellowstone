@@ -14,3 +14,46 @@
   line-height: 30px;
   color: #707070;
 }
+
+@media (min-width: 768px) {
+  .features {
+    max-width: none;
+    padding: 120px 40px;
+
+    text-align: right;
+    background-image: url('../../assets//buffalo-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wrapper {
+    padding: 0 20px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .title {
+    display: inline;
+    padding: 0 10px;
+
+    font-size: 50px;
+    color: #f7c90b;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .textWrapper {
+    margin-top: 110px;
+    max-width: 50%;
+    margin-left: auto;
+  }
+
+  .text {
+    display: inline;
+    color: #fff;
+    text-shadow: 1px 2px 5px rgba(0,0,0,.95);
+  }
+}

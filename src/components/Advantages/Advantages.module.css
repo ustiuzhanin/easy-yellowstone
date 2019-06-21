@@ -1,9 +1,18 @@
 .advantages {
   max-width: 450px;
-  padding: 0 20px;
+  padding: 20px;
   margin: 0 auto;
 }
 
-.wrapper {
-  margin: 0 -20px;
+@media (min-width: 768px) {
+  .advantages {
+    max-width: 700px;
+    margin-bottom: 30px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

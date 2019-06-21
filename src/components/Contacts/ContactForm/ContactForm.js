@@ -37,7 +37,7 @@ export class ContactForm extends Component {
   render() {
     return (
       <form className={styles.form}>
-        <p className={styles.inputWrapper}>
+        <div className={styles.inputWrapper}>
         <label className={styles.label}>Full Name:</label>
         <input
             className={styles.input}
@@ -45,19 +45,20 @@ export class ContactForm extends Component {
             name="name"
             type="text"
             value={this.state.name}
-            onChange={this.inputChangeHandler} />
-        </p>
-        <p className={styles.inputWrapper}>
-        <label className={styles.label}>Email Address</label>
+            onChange={this.inputChangeHandler}
+            required />
+        </div>
+        <div className={styles.inputWrapper}>
+        <label className={styles.label}>Email Address:</label>
         <input
             className={styles.input}
             name="email"
             type="email"
             value={this.state.email}
             onChange={this.inputChangeHandler} />
-        </p>
-        <p className={styles.inputWrapper}>
-        <label className={styles.label}>Phone Number</label>
+        </div>
+        <div className={styles.inputWrapper}>
+        <label className={styles.label}>Phone Number:</label>
         <input
             className={styles.input}
             name="phone"
@@ -65,33 +66,35 @@ export class ContactForm extends Component {
             pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
             required
             value={this.state.phone}
-            onChange={this.phoneChangeHandler} />
-        </p>
-        <p className={styles.inputWrapper}>
-        <label className={styles.label}>Number Of People</label>
+            onChange={this.phoneChangeHandler}
+            required />
+        </div>
+        <div className={styles.inputWrapper}>
+        <label className={styles.label}>Number Of People:</label>
         <input
             className={styles.input}
             name="amount"
             type="number"
             value={this.state.amount}
-            onChange={this.inputChangeHandler} />
-        </p>
-        <p className={styles.inputWrapper}>
-        <label className={styles.label}>Date</label>
+            onChange={this.inputChangeHandler}
+            required />
+        </div>
+        <div className={styles.inputWrapper}>
+        <label className={styles.label}>Date:</label>
           <DayPickerInput 
-            inputProps={{readOnly: 'true'}} 
+            inputProps={{readOnly: true, placeholder: ''}} 
             className={styles.input} 
             onDayChange={date => this.setState({date: date})} 
             dayPickerProps={{ disabledDays: {before: new Date()} }} />
-        </p>
-        <p className={styles.inputWrapper}>
-        <label className={styles.label}>Additional Message</label>
+        </div>
+        <div className={styles.inputWrapper}>
+        <label className={styles.label}>Additional Message:</label>
         <textarea
             className={styles.input}
             name="message"
             value={this.state.message}
             onChange={this.inputChangeHandler} />
-        </p>
+        </div>
         <button className={styles.btn} type='submit'>Submit</button>
       </form>
     );
