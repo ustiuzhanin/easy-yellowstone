@@ -16,3 +16,14 @@
     justify-content: space-around;
   }
 }
+
+@media (min-width: 1024px) {
+  .advantages {
+    max-width: 1024px;
+    margin-bottom: 70px;
+  }
+
+  .wrapper {
+    flex-wrap: nowrap;
+  }
+}

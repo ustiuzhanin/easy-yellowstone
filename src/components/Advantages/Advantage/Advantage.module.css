@@ -32,3 +32,9 @@
     order: 1;
   }
 }
+
+@media (min-width: 1024px) {
+  .advantage:nth-child(3) {
+    order: 0;
+  }
+}

@@ -53,3 +53,17 @@
     max-height: 300px;
   }
 }
+
+@media (min-width: 1024px) {
+  .tour {
+    margin-bottom: 80px;
+  }
+
+  .wrapper {
+    padding: 15px 30px;
+  }
+
+  .img {
+    max-height: 330px;
+  }
+}

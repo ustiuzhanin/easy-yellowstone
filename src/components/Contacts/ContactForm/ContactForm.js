@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import styles from './ContactForm.module.css';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import 'react-day-picker/lib/style.css';
+import axios from 'axios';
 
 export class ContactForm extends Component {
 
@@ -34,9 +35,24 @@ export class ContactForm extends Component {
     });
   }
 
+  async formSubmitHandler(evt) {
+    evt.preventDefault();
+    console.log('qq');
+    const { name, email, phone, amount, date, message } = this.state;
+
+    const form = await axios.post('/api/form', {
+      name, 
+      email, 
+      phone, 
+      amount, 
+      date, 
+      message
+    })
+  }
+
   render() {
     return (
-      <form className={styles.form}>
+      <form  onSubmit={(evt) => this.formSubmitHandler(evt)} className={styles.form}>
         <div className={styles.inputWrapper}>
         <label className={styles.label}>Full Name:</label>
         <input
@@ -64,7 +80,6 @@ export class ContactForm extends Component {
             name="phone"
             type="tel"
             pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-            required
             value={this.state.phone}
             onChange={this.phoneChangeHandler}
             required />

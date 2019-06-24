@@ -14,3 +14,9 @@
     max-width: 700px;
   }
 }
+
+@media (min-width: 1024px) {
+  .tours {
+    max-width: 1024px;
+  }
+}

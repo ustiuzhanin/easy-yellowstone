@@ -49,6 +49,7 @@
 @media (min-width: 768px) {
   .catcher {
     padding-top: 0;
+    margin-top: -96px;
   }
 
   .wrapper {
@@ -65,5 +66,15 @@
 
   .btn {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catcher {
+    margin-top: -122px;
+  }
+
+  .wrapper {
+    width: 670px;
   }
 }

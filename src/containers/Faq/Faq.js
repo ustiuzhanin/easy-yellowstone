@@ -12,13 +12,13 @@ function faq() {
       <div className={styles.contentWrapper}>
         <p><b>Items Provided on Your Tour:</b> A spotting Scope and 2 sets of binoculars.</p>
         <b>Please bring:</b>
-        <ul>
-          <li>1 reusable water bottle per person you are traveling with</li>
-          <li>Sunscreen</li>
-          <li>Chap-stick</li>
-          <li>Hat/ball cap</li>
-          <li>Because snow and rain happen unexpectedly, please bring layers of clothing, including: t-shirt, long-sleeved shirt, water resistant jacket, shoes that are comfortable to walk in</li>
-          <li>Backpack (if you have one)</li>
+        <ul className={styles.list}>
+          <li className={styles.item}>1 reusable water bottle per person you are traveling with</li>
+          <li className={styles.item}>Sunscreen</li>
+          <li className={styles.item}>Chap-stick</li>
+          <li className={styles.item}>Hat/ball cap</li>
+          <li className={styles.item}>Because snow and rain happen unexpectedly, please bring layers of clothing, including: t-shirt, long-sleeved shirt, water resistant jacket, shoes that are comfortable to walk in</li>
+          <li className={styles.item}>Backpack (if you have one)</li>
         </ul>
         <b>Remember:</b> <p>You are coming to a high elevation area, where you require more water intake than you typically would at lower elevations. We recommend making an effort to drink more water than you usually would, the week before you travel to help prevent dehydration and altitude sickness. If you have health conditions, please consult you doctor before coming.</p>
       </div>

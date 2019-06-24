@@ -15,6 +15,26 @@
   color: #585858;
 }
 
+.list {
+  list-style-type: none;
+}
+
+.item {
+  position: relative;
+}
+
+.item:before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 10px;
+
+  width: 7px;
+  height: 7px;
+  border-radius: 50%; 
+  background-color: #f7c90b;
+}
+
 b {
   color: #000;
 }

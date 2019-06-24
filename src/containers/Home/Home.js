@@ -17,7 +17,7 @@ function Home() {
       <Features />
       <Tours />
       <Advantages />
-      <Gallery />
+      {/* <Gallery /> */}
       <HomeContactsForm />
     </section>
   )
