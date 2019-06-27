@@ -1,1 +1,1 @@
-web: run-p server start
+web: node server/index.js
