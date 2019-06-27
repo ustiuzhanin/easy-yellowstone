@@ -56,6 +56,7 @@ export class Tours extends Component {
             return <Tour key={item.id} {...item} />
           })}
         </div>
+        
       </section>
     )
   }
