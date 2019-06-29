@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require("nodemailer");
 const path = require('path');
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(bodyParser.json());
@@ -75,8 +76,6 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
   })
 }
-
-const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server lstnng on port ${PORT}`)
