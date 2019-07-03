@@ -52,11 +52,9 @@ export class Tours extends Component {
         <h2 className={styles.title}>Lorem Featured Tour Destinations</h2>
         <div className={styles.wrapper}>
           {this.state.tours.map(item => {
-            console.log(item)
             return <Tour key={item.id} {...item} />
           })}
         </div>
-        
       </section>
     )
   }

@@ -9,7 +9,6 @@ function catcher() {
       <div className={styles.wrapper}>
         <h1 className={styles.title}>Easy Tours Yellowstone</h1>
         <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, adipisci.</p>
-        {/* <button className={styles.btn}>Book Now</button> */}
         <Link className={styles.btn} to={'/booking'}>Book Now</Link>
       </div>
     </section>

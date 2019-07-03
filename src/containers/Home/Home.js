@@ -1,8 +1,6 @@
 import React from 'react';
 
-import styles from './Home.module.css'
 import Catcher from '../../components/Catcher/Catcher';
-import SpecialOffer from '../../components/SpecialOffer/SpecialOffer';
 import Tours from '../../components/Tours/Tours';
 import Features from '../../components/Features/Features';
 import Advantages from '../../components/Advantages/Advantages';
@@ -13,11 +11,10 @@ function Home() {
   return (
     <section>
       <Catcher />
-      <SpecialOffer />
       <Features />
       <Tours />
       <Advantages />
-      {/* <Gallery /> */}
+      <Gallery />
       <HomeContactsForm />
     </section>
   )

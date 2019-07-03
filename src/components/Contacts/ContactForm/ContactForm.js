@@ -40,7 +40,7 @@ export class ContactForm extends Component {
     console.log('qq');
     const { name, email, phone, amount, date, message } = this.state;
 
-    const form = await axios.post('/api/form', {
+    await axios.post('/api/form', {
       name, 
       email, 
       phone, 
@@ -54,8 +54,9 @@ export class ContactForm extends Component {
     return (
       <form  onSubmit={(evt) => this.formSubmitHandler(evt)} className={styles.form}>
         <div className={styles.inputWrapper}>
-        <label className={styles.label}>Full Name:</label>
+        <label htmlFor="name" className={styles.label}>Full Name:</label>
         <input
+            id="name"
             className={styles.input}
             minLength='2'
             name="name"
@@ -65,8 +66,9 @@ export class ContactForm extends Component {
             required />
         </div>
         <div className={styles.inputWrapper}>
-        <label className={styles.label}>Email Address:</label>
+        <label htmlFor="email" className={styles.label}>Email Address:</label>
         <input
+            id="email"
             className={styles.input}
             name="email"
             type="email"
@@ -74,8 +76,9 @@ export class ContactForm extends Component {
             onChange={this.inputChangeHandler} />
         </div>
         <div className={styles.inputWrapper}>
-        <label className={styles.label}>Phone Number:</label>
+        <label htmlFor="phone" className={styles.label}>Phone Number:</label>
         <input
+            id="phone"
             className={styles.input}
             name="phone"
             type="tel"
@@ -85,8 +88,9 @@ export class ContactForm extends Component {
             required />
         </div>
         <div className={styles.inputWrapper}>
-        <label className={styles.label}>Number Of People:</label>
+        <label htmlFor="amount" className={styles.label}>Number Of People:</label>
         <input
+            id="amount"
             className={styles.input}
             name="amount"
             type="number"
@@ -95,16 +99,17 @@ export class ContactForm extends Component {
             required />
         </div>
         <div className={styles.inputWrapper}>
-        <label className={styles.label}>Date:</label>
-          <DayPickerInput 
-            inputProps={{readOnly: true, placeholder: ''}} 
+        <label htmlFor="date" className={styles.label}>Date:</label>
+          <DayPickerInput
+            inputProps={{readOnly: true, placeholder: '', id: 'date'}} 
             className={styles.input} 
             onDayChange={date => this.setState({date: date})} 
             dayPickerProps={{ disabledDays: {before: new Date()} }} />
         </div>
         <div className={styles.inputWrapper}>
-        <label className={styles.label}>Additional Message:</label>
+        <label htmlFor="message" className={styles.label}>Additional Message:</label>
         <textarea
+            id="message"
             className={styles.input}
             name="message"
             value={this.state.message}

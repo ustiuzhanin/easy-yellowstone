@@ -4,7 +4,6 @@ import styles from './Tour.module.css';
 import { Link } from 'react-router-dom';
 
 function tour(props) {
-  console.log(props)
   return (
     <article className={styles.tour}>
       <img className={styles.img} src={props.url} alt={props.title} />
