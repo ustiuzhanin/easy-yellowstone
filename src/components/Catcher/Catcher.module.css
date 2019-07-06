@@ -4,6 +4,7 @@
   align-items: center;
   padding-top: 56px;
   height: 100vh;
+  max-height: 1745px;
 
   background-image: url('../../assets/tevin-trinh-435986-unsplash1.jpg');
   background-position: 50%;

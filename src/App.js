@@ -7,6 +7,7 @@ import Faq from './containers/Faq/Faq';
 import Contacts from './containers/Contacts/Contacts'
 import Tours from './containers/Tours/Tours';
 import Book from './containers/Book/Book';
+import NotFound from './containers/NotFound/NotFound';
 
 import Home from './containers/Home/Home';
 
@@ -22,10 +23,10 @@ function App() {
             <Route path='/contacts' exact component={Contacts} />
             <Route path='/tours/:id' exact component={Tours} />
             <Route path='/booking/' exact component={Book} />
+            <Route path='*' exact component={NotFound} />
           </Switch>
         </Layout>
       </ScrollToTop>
-      {/* <Route path='/gallery/' exact component={FullscreenGallery} /> */}
     </div>
   );
 }

@@ -1,0 +1,22 @@
+.text, .title {
+  color: #fff;
+  text-shadow: 1px 2px 5px rgba(0,0,0,.95);
+}
+
+.title {
+  color: #f7c90b;
+}
+
+.img {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.95);
+}
+
+@media (min-width: 768px) {
+  .review {
+    margin: 0 20px;
+  }
+}

@@ -58,6 +58,7 @@ export class Carousel extends Component {
       slidesToScroll: 1,
       draggable: false,
       arrows: true,
+      dotsClass: "slick-dots slick-dots-gallery",
       autoplay: true,
       autoplaySpeed: 4000,
       nextArrow: <CustomArrow next />,

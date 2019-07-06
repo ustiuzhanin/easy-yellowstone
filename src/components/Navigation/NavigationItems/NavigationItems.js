@@ -21,10 +21,6 @@ function navigationItems(props) {
           link='/contacts' 
           clicked={props.clicked} 
           exact>Contacts</NavigationItem>
-        <NavigationItem 
-          link='/friends/' 
-          clicked={props.clicked} 
-          exact>Friends</NavigationItem>
     </ul>
   )
 }

@@ -1,0 +1,39 @@
+.reviews {
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  text-align: center;
+  color: #fff;
+  background-image: url('../../assets/reviews-bg.jpg');
+  background-size: 100% 100%;
+}
+
+.wrapper {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.link {
+  margin-top: 60px;
+  display: inline-block;
+  padding: 10px 20px;
+
+  font-size: 16px;
+  color: #f7c90b;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #f7c90b;
+  border-radius: 25px;
+}
+
+.reviews button:before {
+  opacity: 1;
+  color: #fff;
+}
+
+@media (min-width: 758px) {
+  .wrapper {
+    max-width: 500px;
+  }
+}

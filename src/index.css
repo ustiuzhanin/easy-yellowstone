@@ -10,7 +10,8 @@ html {
 
 body {
   min-width: 320px;
-  margin: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -37,4 +38,49 @@ h1, h2, h3, h4 {
 
 div.DayPickerInput {
   display: block;
+}
+
+/* react-slick custom styles */
+
+.slick-dots li {
+  width: 15px;
+  height: 15px;
+}
+
+.slick-dots li button {
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  border-radius: 50%
+}
+
+.slick-dots li.slick-active button {
+  border: 1px solid #f7c90b;
+}
+
+.slick-dots li button:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  margin: 5px;
+
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 5px;
+  font-size: 5px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: #f7c90b;
+  opacity: 1;
+}
+
+.slick-dots-gallery li button:before {
+  background-color: grey;
+}
+
+.slick-dots-gallery li button {
+  border: 1px solid grey;
 }

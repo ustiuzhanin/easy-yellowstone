@@ -1,0 +1,15 @@
+.notFound {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 56px;
+}
+
+.title {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 20px;
+}
