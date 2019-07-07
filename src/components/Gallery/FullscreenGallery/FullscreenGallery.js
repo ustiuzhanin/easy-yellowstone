@@ -29,6 +29,7 @@ export class FullscreenGallery extends Component {
   }
 
   render() {
+    console.log(this.state)
     const currentSlide = this.state.pictures[this.props.id]
     return (
       <section className={styles.fullscreenImg}>

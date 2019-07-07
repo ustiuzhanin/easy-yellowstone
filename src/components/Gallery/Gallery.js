@@ -5,6 +5,7 @@ import MediaQuery from 'react-responsive';
 import Slider from 'react-slick';
 import FullscreenGallery from './FullscreenGallery/FullscreenGallery';
 import CustomArrow from './CustomArrow/CustomArrow';
+import customArrow from './CustomArrow/CustomArrow';
 
 export class Carousel extends Component {
   state = {
@@ -35,7 +36,6 @@ export class Carousel extends Component {
   };
 
   sliderClickHandler = (evt) => {
-    console.log('qq')
     this.setState({
       fullscreen: true,
       currentSlide: evt.target.id
@@ -47,6 +47,15 @@ export class Carousel extends Component {
       fullscreen: false,
       currentSlide: null
     })
+  }
+
+  afterChangeHandler = (currentSlide) => {
+    console.log(currentSlide)
+    this.setState({
+      currentSlide: currentSlide
+    })
+    console.log(this.state.currentSlide)
+
   }
 
   render() {
@@ -82,10 +91,10 @@ export class Carousel extends Component {
         </div>
         <div className={styles.wrapper}>
 
-          {this.state.fullscreen ? <FullscreenGallery id={this.state.currentSlide} close={this.closeBtnHandler} /> : null}
+          {this.state.fullscreen ? <FullscreenGallery id={this.state.currentSlide} close={this.closeBtnHandler} arrow={<CustomArrow prev />} /> : null}
 
           <MediaQuery minDeviceWidth={1024}>
-            <Slider {...settings}>
+            <Slider {...settings} afterChange={this.afterChangeHandler}>
 
               {this.state.slides.map(slide => (
                 <div key={slide.id} onClick={(evt) => this.sliderClickHandler(evt)}>

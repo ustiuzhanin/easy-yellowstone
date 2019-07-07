@@ -38,3 +38,9 @@
 b {
   color: #000;
 }
+
+@media (min-width: 768px) {
+  .faq {
+    max-width: 700px;
+  }
+}

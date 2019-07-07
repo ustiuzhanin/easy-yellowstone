@@ -42,3 +42,9 @@
 .contacts form {
   background-color: #fdfdfd;
 }
+
+@media (min-width: 768px) {
+  .contacts {
+    max-width: 700px;
+  }
+}
